@@ -1,0 +1,5 @@
+{"id":"K0","component_group":"PART0","valid_from":"2025-01-01","valid_to":"2027-01-01","repair_cost_cents":10000,"recovery_cents":3000,"recovery_confirmed":true,"known_at":"2026-09-01T09:00:00+08:00"}
+{"id":"K1","component_group":"PART1","valid_from":"2025-01-01","valid_to":"2027-01-01","repair_cost_cents":12000,"recovery_cents":3000,"recovery_confirmed":false,"known_at":"2026-09-01T09:00:00+08:00"}
+{"id":"K2","component_group":"PART2","valid_from":"2025-01-01","valid_to":"2027-01-01","repair_cost_cents":14000,"recovery_cents":3000,"recovery_confirmed":true,"known_at":"2026-09-01T09:00:00+08:00"}
+{"id":"K3","component_group":"PART3","valid_from":"2025-01-01","valid_to":"2027-01-01","repair_cost_cents":16000,"recovery_cents":3000,"recovery_confirmed":false,"known_at":"2026-09-01T09:00:00+08:00"}
+{"id":"K4","component_group":"PART4","valid_from":"2025-01-01","valid_to":"2027-01-01","repair_cost_cents":18000,"recovery_cents":3000,"recovery_confirmed":true,"known_at":"2026-09-01T09:00:00+08:00"}

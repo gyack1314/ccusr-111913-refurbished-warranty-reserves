@@ -1,0 +1,2 @@
+{"id":"F1","kind":"available","cents":3000000,"scope":"all","known_at":"2026-09-01T09:00:00+08:00"}
+{"id":"F2","kind":"other_commitment","cents":1200000,"scope":"batch_B0","known_at":"2026-09-02T09:00:00+08:00"}

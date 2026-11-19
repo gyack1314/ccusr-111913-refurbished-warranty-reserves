@@ -1,0 +1,2 @@
+{"id":"C1","months":12,"repeat_days":30,"refund_ends_cover":true,"replacement_ends_cover":true,"covered_symptoms":["cooling","power","noise"]}
+{"id":"C2","months":6,"repeat_days":15,"refund_ends_cover":true,"replacement_ends_cover":true,"covered_symptoms":["cooling","power"]}
