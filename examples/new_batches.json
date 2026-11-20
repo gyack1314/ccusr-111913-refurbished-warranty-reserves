@@ -1,0 +1,6 @@
+{
+  "batches": [
+    {"name": "2026Q4-A-20台", "segments": 20, "kind": "aircon", "age_years": 4, "contract": "C1", "sold_at": "2026-10-01T00:00:00+08:00", "component": "PART1"},
+    {"name": "2026Q4-B-8台", "segments": 8, "kind": "washer", "age_years": 7, "contract": "C2", "sold_at": "2026-10-01T00:00:00+08:00", "component": "PART3"}
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "determination": {
+    "determination_id": "R-2026-09-02-all",
+    "as_of": "2026-09-02T23:59:59+08:00",
+    "scope": "all",
+    "model_version": "reserve-model/1.0",
+    "assumptions": {
+      "repeat_prior": "Beta(0.5, 40) 年暴露先验，仅用于在无重复关联资料时给出上限，不当作已发生",
+      "common_mode_probability": "5.0% 概率/零件组/批次出现共同冲击",
+      "common_mode_hit_rate": "共同冲击下同组有效保障额外 35% 出险",
+      "severity_log_sigma": "单案费用对数标准差 0.6",
+      "note": "这些是情景假设，不是从数据拟合出的可靠参数；证据不足批次保留限制"
+    },
+    "price_sources": {
+      "PART0": "K0",
+      "PART1": "K1",
+      "PART2": "K2",
+      "PART3": "K3",
+      "PART4": "K4"
+    },
+    "active_segment_ids": [
+      "S123",
+      "S129",
+      "S135",
+      "S141",
+      "S147",
+      "S153",
+      "S159",
+      "S165",
+      "S171",
+      "S177"
+    ],
+    "reported_unpaid_ids": [
+      "R006",
+      "R018",
+      "R030",
+      "R042",
+      "R054",
+      "R066",
+      "R078",
+      "R090",
+      "R102",
+      "R114",
+      "R126",
+      "R138",
+      "R150",
+      "R162",
+      "R174"
+    ],
+    "gross_required_cents": 258944,
+    "confirmed_recovery_cents": 27696,
+    "unconfirmed_recovery_cents": 18464,
+    "net_requirement_cents": 231249,
+    "coverage_cents": 3000000,
+    "gap_cents": 0,
+    "evidence_limits": [
+      "1 段有效保障来自不完整名册，不计入批次率分母",
+      "资料中没有 previous_claim 关联的重复维修，重复备抵取上限而非点估计",
+      "重复备抵证据不足，仅保留限制性金额，不据此声称可靠"
+    ],
+    "funding_snapshot": {
+      "available_cents": 3000000,
+      "committed_cents": 1200000,
+      "free_cents": 1800000,
+      "committed_by_scope": {
+        "batch_B0": 1200000
+      },
+      "commitment_ids": [
+        "F2"
+      ],
+      "fund_ids": [
+        "F1",
+        "F2"
+      ],
+      "note": "可用额是总额，已占用部分从余额扣除；各批次方案不重复认领同一笔共享余额"
+    },
+    "reserve_snapshot": {
+      "as_of": "2026-09-02T23:59:59+08:00",
+      "scope": "all",
+      "reported_unpaid_cents": 225000,
+      "reported_unpaid_ids": [
+        "R006",
+        "R018",
+        "R030",
+        "R042",
+        "R054",
+        "R066",
+        "R078",
+        "R090",
+        "R102",
+        "R114",
+        "R126",
+        "R138",
+        "R150",
+        "R162",
+        "R174"
+      ],
+      "paid_realized_cents": 1800000,
+      "ibnr_expected_cents": 5893,
+      "ibnr_segments": 10,
+      "ibnr_detail": [
+        {
+          "sale": "S123",
+          "batch": "B6",
+          "contract": "C1",
+          "remaining_months": 0.03,
+          "claim_probability": 0.0008,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 11.93,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S129",
+          "batch": "B3",
+          "contract": "C1",
+          "remaining_months": 0.43,
+          "claim_probability": 0.0102,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 155.08,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S135",
+          "batch": "B0",
+          "contract": "C1",
+          "remaining_months": 0.82,
+          "claim_probability": 0.0196,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 298.23,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S141",
+          "batch": "B6",
+          "contract": "C1",
+          "remaining_months": 1.22,
+          "claim_probability": 0.0277,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 423.1,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S147",
+          "batch": "B3",
+          "contract": "C1",
+          "remaining_months": 1.61,
+          "claim_probability": 0.0369,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 562.99,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S153",
+          "batch": "B0",
+          "contract": "C1",
+          "remaining_months": 2.0,
+          "claim_probability": 0.0424,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 646.09,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S159",
+          "batch": "B6",
+          "contract": "C1",
+          "remaining_months": 2.4,
+          "claim_probability": 0.0514,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 783.19,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S165",
+          "batch": "B3",
+          "contract": "C1",
+          "remaining_months": 2.79,
+          "claim_probability": 0.0603,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 920.29,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S171",
+          "batch": "B0",
+          "contract": "C1",
+          "remaining_months": 3.19,
+          "claim_probability": 0.0642,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 978.9,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        },
+        {
+          "sale": "S177",
+          "batch": "B6",
+          "contract": "C1",
+          "remaining_months": 3.58,
+          "claim_probability": 0.073,
+          "expected_cost_cents": 15250.0,
+          "ibnr_cents": 1113.46,
+          "component_terms_cents": {
+            "PART0": 13250.0,
+            "PART1": 14250.0,
+            "PART2": 15250.0,
+            "PART3": 16250.0,
+            "PART4": 17250.0
+          }
+        }
+      ],
+      "repeat_allowance_cents": 28051,
+      "repeat_detail": {
+        "linked_repeat_events": 0,
+        "repaired_cases": 45,
+        "post_repair_exposure_years": 42.83,
+        "posterior_mean_probability_per_case": 0.0109,
+        "upper_95_probability_per_case": 0.0416,
+        "note": "无 previous_claim 关联时不按相似症状合并；上限仅作证据不足备抵，不据此声称可靠"
+      },
+      "gross_required_cents": 258944,
+      "confirmed_recovery_cents": 27696,
+      "confirmed_recovery_ids": [
+        "K0",
+        "K2",
+        "K4"
+      ],
+      "unconfirmed_recovery_cents": 18464,
+      "unconfirmed_recovery_ids": [
+        "K1",
+        "K3"
+      ],
+      "net_requirement_cents": 231249,
+      "active_segment_ids": [
+        "S123",
+        "S129",
+        "S135",
+        "S141",
+        "S147",
+        "S153",
+        "S159",
+        "S165",
+        "S171",
+        "S177"
+      ],
+      "price_sources": {
+        "PART0": "K0",
+        "PART1": "K1",
+        "PART2": "K2",
+        "PART3": "K3",
+        "PART4": "K4"
+      },
+      "hazard": {
+        "complete_segments": 155,
+        "max_months": 12,
+        "monthly_hazard": {
+          "C1": [
+            0.1603,
+            0.162,
+            0.1842,
+            0.1771,
+            0.2125,
+            0.0781,
+            0.0185,
+            0.0185,
+            0.0185,
+            0.02,
+            0.0227,
+            0.0238
+          ],
+          "C2": [
+            0.0696,
+            0.0987,
+            0.0652,
+            0.0859,
+            0.0738,
+            0.0273,
+            0.0094,
+            0.0094,
+            0.0094,
+            0.0102,
+            0.0114,
+            0.0125
+          ]
+        },
+        "monthly_events_at_risk": {
+          "C1": [
+            [
+              12,
+              77
+            ],
+            [
+              11,
+              70
+            ],
+            [
+              10,
+              56
+            ],
+            [
+              8,
+              47
+            ],
+            [
+              8,
+              39
+            ],
+            [
+              2,
+              31
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              24
+            ],
+            [
+              0,
+              21
+            ],
+            [
+              0,
+              20
+            ]
+          ],
+          "C2": [
+            [
+              5,
+              78
+            ],
+            [
+              7,
+              75
+            ],
+            [
+              4,
+              68
+            ],
+            [
+              5,
+              63
+            ],
+            [
+              4,
+              60
+            ],
+            [
+              1,
+              54
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              52
+            ],
+            [
+              0,
+              48
+            ],
+            [
+              0,
+              43
+            ],
+            [
+              0,
+              39
+            ]
+          ]
+        },
+        "note": "按完整名册的销售后月龄暴露估计；转入资料不进入分母"
+      },
+      "severity": {
+        "component_mix": {
+          "PART0": 0.2,
+          "PART1": 0.2,
+          "PART2": 0.2,
+          "PART3": 0.2,
+          "PART4": 0.2
+        },
+        "action_mix": {
+          "C1": {
+            "repair": 0.5,
+            "refund": 0.5,
+            "replacement": 0.0
+          },
+          "C2": {
+            "repair": 0.5,
+            "refund": 0.5,
+            "replacement": 0.0
+          }
+        },
+        "action_costs_cents": {
+          "refund": 16500,
+          "replacement": 13500,
+          "repair": 15000
+        }
+      },
+      "assumptions": {
+        "repeat_prior": "Beta(0.5, 40) 年暴露先验，仅用于在无重复关联资料时给出上限，不当作已发生",
+        "common_mode_probability": "5.0% 概率/零件组/批次出现共同冲击",
+        "common_mode_hit_rate": "共同冲击下同组有效保障额外 35% 出险",
+        "severity_log_sigma": "单案费用对数标准差 0.6",
+        "note": "这些是情景假设，不是从数据拟合出的可靠参数；证据不足批次保留限制"
+      },
+      "evidence_limits": [
+        "1 段有效保障来自不完整名册，不计入批次率分母",
+        "资料中没有 previous_claim 关联的重复维修，重复备抵取上限而非点估计",
+        "重复备抵证据不足，仅保留限制性金额，不据此声称可靠"
+      ],
+      "model_version": "reserve-model/1.0"
+    },
+    "frozen": true
+  },
+  "changes": [],
+  "reopened_cases": [],
+  "funding_changes": [],
+  "adequacy": {
+    "determination": "R-2026-09-02-all",
+    "as_of": "2026-09-02T23:59:59+08:00",
+    "frozen_model": "reserve-model/1.0",
+    "carried_requirement_cents": 231249,
+    "coverage_cents": 3000000,
+    "gap_cents": 0,
+    "net_change_cents": 0,
+    "changes": [],
+    "reopened_cases": [],
+    "funding_changes": [],
+    "stale_funding_warning": null,
+    "note": "承接认定不改写原冻结口径；新增事实以释放/补提单列"
+  }
+}
